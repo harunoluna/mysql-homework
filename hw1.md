@@ -35,7 +35,7 @@ mysql> DESCRIBE hw1;
 | name  | varchar(20) | YES  |     | NULL    |       |
 +-------+-------------+------+-----+---------+-------+
 2 rows in set (0.00 sec)
-##使用DESCRIBE命令显示表格
+##使用DESCRIBE命令显示表格数据类型
 
 mysql> drop table hw1;
 Query OK, 0 rows affected (0.01 sec)
