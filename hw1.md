@@ -1,6 +1,6 @@
 姓名：竺雷  学号：17061636
 
-## 作业1：尝试执行命令CREATE/DROP/ALTER TABLE/NOT NULL/PRIMA KEY/UNIQUE/SHOW TABLES/DESCRIBE TABLE;
+## 作业1：尝试执行命令CREATE/DROP/ALTER TABLE/NOT NULL/PRIMA KEY/UNIQUE/SHOW TABLES/DESCRIBE TABLE
 ```sql
 mysql> create table hw1(id int);
 Query OK, 0 rows affected (0.04 sec)
