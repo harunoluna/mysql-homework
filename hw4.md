@@ -1,6 +1,7 @@
 姓名：竺雷  学号：17061636
 
 ## 作业4：运行下列存储过程和函数
+```sql
 mysql> DELIMITER $$
 mysql> CREATE PROCEDURE proce_employee_sal1 ()
     -> BEGIN
@@ -47,3 +48,4 @@ mysql> DELIMITER;
 +-------------------------+
 1 row in set (0.01 sec)
 ##可以得到对应的数据
+```
