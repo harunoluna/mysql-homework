@@ -9,7 +9,7 @@ mysql> CREATE PROCEDURE proce_employee_sal1 ()
     -> FROM t_employee2;
     -> END$$
 
-##使用定义的函数调出命令
+--使用定义的函数调出命令
 mysql> DELIMITER;
     -> CALL proce_employee_sal1();
 +------+
@@ -31,7 +31,7 @@ mysql> DELIMITER;
 +------+
 13 rows in set (0.01 sec)
 
-##同理，使用另一命令函数
+---同理，使用另一命令函数
 mysql> DELIMITER $$
 mysql> CREATE FUNCTION func_employee_sal (empno INT)
     -> RETURNS DOUBLE
@@ -47,5 +47,5 @@ mysql> DELIMITER;
 |                     800 |
 +-------------------------+
 1 row in set (0.01 sec)
-##可以得到对应的数据
+--可以得到对应的数据
 ```
