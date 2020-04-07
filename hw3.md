@@ -4,7 +4,7 @@
 ```sql
 mysql>select * from t_employee WHERE sal > (
       select sal from t_employee WHERE ename='SMITH');
-##该命令意为：选出t_employee表格中sal值大于t_employee表格中ename是SMITH的对应的值的数据，使用jion改写如下
+--该命令意为：选出t_employee表格中sal值大于t_employee表格中ename是SMITH的对应的值的数据，使用jion改写如下
 mysql>>select * from t_employee
        inner join t_employee2
        on t_employee.sal > (select sal from t_employee WHERE ename='SMITH')
@@ -12,7 +12,7 @@ mysql>>select * from t_employee
 
 mysql>select * from t_employee WHERE (sal,job) = (
       select sal,job from t_employee where ename = 'smith');     
-##改写如下
+--改写如下
 mysql>select * from t_employee
       inner join t_employee2
       on t_employee.(sal,job) = (select sal,job from t_employee where ename = 'smith')
