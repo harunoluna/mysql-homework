@@ -31,7 +31,7 @@ mysql> DELIMITER;
 +------+
 13 rows in set (0.01 sec)
 
----同理，使用另一命令函数
+--同理，使用另一命令函数
 mysql> DELIMITER $$
 mysql> CREATE FUNCTION func_employee_sal (empno INT)
     -> RETURNS DOUBLE
