@@ -1,7 +1,7 @@
 姓名：竺雷 学号：17061636
 ## 从提供的信息中，输出我、我的老板、我的老板的老板
 ```sql
-##导入数据
+--导入数据
 DROP TABLE IF EXISTS t_employee;
 CREATE TABLE t_employee2 (
     deptno INT NOT NULL,
@@ -40,7 +40,7 @@ INSERT INTO t_dept VALUES
   (30, "SALES", "CHICAGO"),
   (40, "OPERATIONS", "BOSTON");
 
-##使用select from inner jion on 命令输出结果
+--使用select from inner jion on 命令输出结果
 mysql> select *
     -> from t_employee2 inner join t_dept
     -> on t_employee2.deptno = t_dept.deptno;
